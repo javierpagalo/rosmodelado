@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+    <include file="$(find bazu)/launch/gazebo_bazu.launch"/>
+    <include file="$(find bazu_moveit_config)/launch/move_group.launch"/>
+    <include file="$(find bazu_moveit_config)/launch/moveit_rviz.launch">
+        <arg name="config" value ="True"/>
+    </include>
+</launch>
